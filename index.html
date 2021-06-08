@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/61652-money-finance-bank-euro-hd-image-free-png.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="login-area">
+        <h1 style="text-align: center;">Mortgage Experts</h1>
+        <h5 style="text-align: center;">you can trust,a rate you'll love</h5>
+        <div class="submit-area">
+            <h3>Login</h3>
+            <input type="text" placeholder="Type Something" class="form-control" id="input"
+                style="text-align: center;"><br>
+            <button id="enterBtn" class="btn btn-primary">Press Enter</button>
+        </div>
+    </div>
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$ <span id="currentDeposit">00</span> </h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$<span id="currentWithdraw">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="balance  status">
+                    <h5>Balance</h5>
+                    <h2>$ <span id="current-balance">820</span> </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Deposit</h4>
+                    <input type="text" class="form-control" placeholder="$ amount you want to deposit" id="depositAmount"><br>
+                    <button class="btn btn-primary" id="addDeposit">Click</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Withdraw</h4>
+                    <input type="text" class="form-control" placeholder="$ amount you want to withdraw"  id="withdrawAmount"><br>
+                    <button class="btn btn-primary" id="addWithdraw">Click</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="fixed-bottom" style="text-align: center;">
+        <h6>Stay Connected</h6>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
