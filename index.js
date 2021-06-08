@@ -36,6 +36,12 @@ document.getElementById('addWithdraw').addEventListener('click', function () {
     const currentWithdrawNum = parseFloat(currentWithdraw);
     const totalWithdraw = withdrawNum + currentWithdrawNum;
     document.getElementById('currentWithdraw').innerText = totalWithdraw;
+    //reduce balance
+    const currentBalance = document.getElementById("current-balance").innerText;
+    const currentBalanceNum = parseFloat(currentBalance);
+    const reduceBalance = currentBalanceNum - 1 * withdrawNum;
+    document.getElementById("current-balance").innerText = reduceBalance;
+
 
     document.getElementById('withdrawAmount').value = '';
 });
